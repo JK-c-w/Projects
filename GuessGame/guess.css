@@ -1,0 +1,74 @@
+
+#full{
+     border: 4px groove  gray;
+     background-color:pink;
+     width: 30vw;
+     height: auto;
+     margin-top: 5vw;
+     margin-left: 35%;
+     text-align: center;
+}#game{
+     display:none; 
+}
+#head{
+     margin-top: 4vw;
+     font-size: larger;
+}
+#b1{
+    margin-top:3vw;
+      background-color:rgb(51, 30, 186);
+      width: 15vw;
+      height: 5vw;
+      border: 1px solid rgb(43, 16, 213);
+}#b2{
+    background-color:rgb(43, 16, 213);
+    width: 15vw;
+    height: 5vw;
+    margin-top: 3vw;
+    border: 1px solid rgb(43, 16, 213);
+    margin-bottom: 2vw;
+}#photo{
+    width: 20vw;
+    height: 25vh;
+}
+#new{
+    background-color:rgb(43, 16, 213);
+    width: 10vw;
+    height: 10vh;
+    margin-top: 3vw;
+    border: 1px solid rgb(43, 16, 213);
+    display:none;
+    margin-left: 10vw;
+}#text{
+     margin-top: 3vw;
+}#no{
+    border: 1px solid black;
+    width: 15vw;
+    height: 5vh;
+    margin-top: 1vw;
+    padding: 1vw;
+}#box{
+    width: 15vw;
+    height: 10vh;
+    margin-left: 7vw;
+}
+
+#A{
+    text-align:start;
+    margin-left: 1vw;
+    margin-top: 5vw;
+}#C{
+    text-align:start;
+    margin-left: 1vw;
+    margin-top: 3vw;
+
+}
+ #B{
+    margin-left:1vw;
+ text-align: start; }
+ #D{
+    margin-bottom:2vw;
+    margin-left: 1vw;
+    text-align: start;
+ }
+

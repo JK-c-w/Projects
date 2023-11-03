@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <link rel="stylesheet" href="/GuessGame/guess.css">
+</head>
+<body>
+    <section id="full">
+    <section id="front">
+        <div id="head">Welcome to Guess Game </div>
+        <div id=" des">GUESS NUMBER FROM 1 TO 100</div>
+        <div id="pic"><img id="photo" src="/GuessGame/micky.gif"</div>
+       <div class="bts" ><button id="b1">Low Level</button>
+        <button id="b2">Hard Level</button></div>
+    </section>
+    <section id="game">
+        <button id="new">NEW GAME</button>
+        <div id="text">GUESS THE NO.</div>
+        <div id="box"><input type="number" id="no" onchange="compare()"></div>
+        <div id="turn">
+        <div id="A"> No. of turns </div>
+        <div id="B"></div>
+            <div id="C">Guessed Numbers</div>
+            <div id="D"></div>
+        </div>
+    </section>
+    </section>
+</body>
+<script src="/GuessGame/guess.js"></script>
+</html>
