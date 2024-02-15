@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(0, 0, 0);
+    position: fixed;
+    z-index: 99;
+}
+
+#loader h1{
+    text-align: center;
+    font-size: 5em;
+    line-height:1em;
+    word-spacing:5px;
+    color: White;
+    z-index:9;
+}
+ #loader #yellow1{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background-color:#f5e41b;
+   z-index:8;
+}
+#loader #yellow2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:#f5e41b;
+    z-index:7;
+ }
+#loader video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index:6;
+}
+#main{
+    background-color: black;
+    overflow-x: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f5e41b;
+
+} 
+#page1 h1{
+    text-align: center;
+    font-size: 5em;
+    line-height:1em;
+    word-spacing:5px;
+
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+   background-position: center;
+}
+.elem {
+    width: 100%;
+    cursor: pointer;
+   
+} 
+.elem h2{
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight:100;
+    position: relative;
+    z-index: 9;
+    
+}
+.elem #moving{
+    overflow: hidden;
+    width: 100vw;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #f5e41b;
+    transform: translateY(-200%) scaleY(0);
+    transition: all ease 1s;
+}
+.elem #moving .blur{
+    width:30%;
+    height: 100%;
+    background-image:linear-gradient(to right,#f5e31bf1,#f5e41b,#f5e31bf7);
+    position: absolute;
+    z-index: 8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 5px 1px #f5e41b;
+}
+.elem #moving #moving-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation: move 10s infinite
+}
+.elem #moving #moving-in h5{
+     font-size:20px;
+     font-weight: 400;
+     color: black;
+     display: inline-block;
+     text-transform: uppercase;
+     word-spacing:1em;
+     margin-right: 30px;
+     line-height: 1.3em;
+     opacity: 0; 
+}
+.elem:hover h2{
+    font-style: italic;
+}
+.elem:hover #moving{
+    transform: translateY(-200%) scaleY(1);
+}
+.elem:hover #moving #moving-in h5{
+    opacity: 1;
+}
+#page3{
+   min-height: 100vh;
+    width: 100vw;
+    background-color:white;
+}
+.img-container{
+    width: 100%;
+    height: 100%;
+    padding:25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-div{
+    position: relative;
+    width:350px;
+    margin:15px;
+    background-color:black;
+    overflow: hidden;
+}
+.img-div .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.119);
+    transition: all ease 0.3s;
+    transition-delay:0.3s;
+    z-index: 11;
+}
+.img-div .overlay .text{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left:50%;
+    display: none;
+    transition: all ease 0.4s;
+    transition-delay:0.4s;
+    transform: translate(-50%,-50%);
+}
+.overlay .text p {
+       font-weight:10;
+       font-size: 50px;
+       line-height: .9em;
+}
+.img-div img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    transform: scale(1);
+    transition: display .3s,transform .3s;
+}
+.img-div:hover img{
+   transform: scale(1.1);
+}
+.img-div:hover .overlay{
+    background-color: black;
+}
+.img-div:hover .overlay .text{
+    display: block;
+}
+
+#nav{
+    width: 100vw;
+    padding: 40px 40px;
+    position:fixed;
+    z-index: 10;
+    display: flex;
+    gap: 50%;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    gap: 20%;
+}
+#details p{
+     font-size:1.2em ;
+     color: black;
+}
+
+
+@keyframes move{
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(-100%);
+      }
+}
